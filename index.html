@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="Top">
+      <h1 id="title">What is your favourite food?</h1>
+      <p id="description">
+        We all like food. But what is your favourite cuisine? <br />
+        Please fill out the below survey? <br />(you can pick more than one
+        cuisine if you would like)
+      </p>
+    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          id="name"
+          class="input-field"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="input-field"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Enter Your Mobile Number:</label>
+        <input
+          type="tel"
+          id="number"
+          class="input-field"
+          placeholder="Enter a UK mobile number (e.g., +44 1234 567890)"
+          pattern="^\+44\s\d{4}\s\d{6}$"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="dropdown">What is your age range?</label>
+        <select id="dropdown" class="select-field" required>
+          <option value="option1">Under 18</option>
+          <option value="option2">18-25</option>
+          <option value="option3">26-40</option>
+          <option value="option4">41-50</option>
+          <option value="option5">51-60</option>
+          <option value="option6">60+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <fieldset class="radio-group">
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <fieldset class="checkbox-group">
+          <legend>Choose your favorite cuisine:</legend>
+          <input type="checkbox" id="indian" name="food-group" value="indian" />
+          <label for="indian">Indian</label>
+          <input
+            type="checkbox"
+            id="italian"
+            name="food-group"
+            value="italian"
+          />
+          <label for="italian">Italian</label>
+          <input
+            type="checkbox"
+            id="chinese"
+            name="food-group"
+            value="chinese"
+          />
+          <label for="chinese">Chinese</label>
+          <input
+            type="checkbox"
+            id="mexican"
+            name="food-group"
+            value="mexican"
+          />
+          <label for="mexican">Mexican</label>
+          <input
+            type="checkbox"
+            id="american"
+            name="food-group"
+            value="american"
+          />
+          <label for="american">American</label>
+          <input type="checkbox" id="other" name="food-group" value="other" />
+          <label for="other">Other</label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="comments">Why did you pick this cuisine option?</label>
+        <textarea
+          id="comments"
+          class="textarea-field"
+          placeholder="Explain your choice. If you clicked other, what is your favourite cuisine and why?"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <div class="container">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
